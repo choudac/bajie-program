@@ -1,0 +1,201 @@
+<link rel="stylesheet" href='/stylesheets/demo.css' />
+
+<div id="app">
+  <div v-for="(list,index) in slideList"
+       :key="index"
+       v-show="index===currentIndex"
+       @mouseenter="stop"
+       @mouseleave="go"
+    >
+    <!-- 巨幕轮换 -->
+      <div class="pic">
+        <a :href="list.clickUrl">
+          <img  :src="list.image" :alt="list.name">
+        </a>
+      </div><!-- 巨幕轮换-row -->
+  </div><!-- box -->
+
+  <!-- 图片转换游标 -->
+  <div class="carousel-items">
+    <span v-for="(item,index) in slideList.length"
+          :class="{'active':index===currentIndex}"
+          @mouseover="change(index)"
+    >
+    </span>
+  </div>
+
+  <br><br>
+
+  <!-- 产品平铺展示 -->
+  <div class="row static-wrap landing-page">
+
+    <!-- 产品分类导航条 -->
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+      <div class="btn-group" role="group">
+        <a href="/btngroup1">
+          <button type="button" class="btn btn-default">土耳其海运整柜</button>
+        </a>
+      </div>
+
+      <div class="btn-group" role="group">
+        <a href="/btngroup2">
+           <button type="button" class="btn btn-default">土耳其海运散货拼柜</button>
+        </a>
+      </div>
+
+      <div class="btn-group" role="group">
+         <a href="/btngroup3">
+           <button type="button" class="btn btn-default">土耳其冷冻柜</button>
+         </a>
+      </div>
+
+      <div class="btn-group" role="group">
+         <a href="/btngroup4">
+            <button type="button" class="btn btn-default">土耳其空运</button>
+          </a>
+      </div>
+    </div> <!-- btn-group -->
+
+    <div class="section section-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-md-push-6">
+              <h3 class="mar"> 20年行业经验 实力强、规模大</h3>
+              <h4 class="description">  .20年土耳其航线运输经验，专业的人才队伍，已为13598家客户提供过物流服务。
+                <br><br>  .土耳其航线国际物流第二品牌，国内各大机场、货站码头、物流园区的最早一批合作伙伴。
+                <br><br>  .辉锐物流是全国最早一批民营货代企业，三大航运联盟所有14家船东实力代理，全国服务能力最全面、最了解土耳其航线的专家级公司。
+              </h4>
+          </div>
+
+          <div class="col-md-5 col-md-pull-5">
+            <div class="img">
+              <!-- 实在找不到类，样式写在表单里-->
+              <img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzqwunigq0g30g40g4t9d.gif">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="main main-raised">
+        <div class="section section-features">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-5 col-md-offset-1">
+                  <br>
+                  <br>
+                  <h3>一站式物流服务效率高、价格低</h3>
+                  <h4 class="description">  可根据客户具体要求，量身打造最合适的运输方案，一条龙门到门服务及跟踪，直至货物到达目的港、土耳其收货人提到货，为客户提高效率，
+                    <br><br>  提供土耳其周边国家转运服务，让客户充分享受便利的货运服务。
+                    <br><br>  中国10大口岸均与各船公司统一签定土耳其海运整柜约价，平日价格最低。
+                  </h4>
+              </div>
+
+              <div class="col-md-5">
+                <div class="img">
+                  <!-- 实在找不到类，样式写在表单里-->
+                  <img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzqyllvcc9g30by0890to.gif">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <div class="section section-features mar">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-6 col-md-push-6">
+                <br>
+                <br>
+                <h3 >港口资源丰富仓位足、放仓快</h3>
+                <h4 class="description">  提供14家船公司船期和运价，港口资源丰富，遍布全球的海外代理网络。
+                  <br><br>  与各大船公司、航空公司、仓码、海关、商检、协会、商会等单位建立了长期和良好的合作关系，放仓速度最快，常年保证仓位，特别是旺季具有仓位优先权。
+
+                </h4>
+            </div>
+
+            <div class="col-md-5 col-md-pull-5">
+              <div class="img">
+                <!-- 实在找不到类，样式写在表单里-->
+                <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzqy3gu8w1g30ci0640sz.gif">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="section section-bottom">
+            <div class="container">
+                  <p class="title">深圳市辉锐国际货运代理有限公司 版权所有
+                                  <br>备案号：粤ICP备14074951号
+                                  <br>24小时服务热线：0755-22196361 E-Mail: fred@hurry-log.com
+                                  <br>投诉电话：0755-22921530 传真：0755-22195134 邮编：518001
+                                  <br>地址：深圳市罗湖区东门南路2020号太阳岛大厦28楼B室
+                                  </p>
+            </div>
+          </div>
+  </div><!-- 产品平铺-row -->
+
+</div><!-- app -->
+<script>
+
+  new Vue({
+    el: '#app',
+    data: {
+      slideList: [  //巨幕轮换-数据。
+        {
+          "clickUrl": "/",
+          "image": "https://ws3.sinaimg.cn/large/006tNc79gy1fzq30uo7wbj31400dw46b.jpg"
+        },
+        {
+          "clickUrl": "/",
+          "image": "https://ws4.sinaimg.cn/large/006tNc79gy1fzq30vqhs7j31400dwdnq.jpg"
+        },
+        {
+          "clickUrl": "/",
+          "image": "https://ws3.sinaimg.cn/large/006tNc79gy1fzq30wq1kdj31400dwqax.jpg"
+        }
+      ],
+
+      currentIndex: 0, //当前指标。
+      timer: ''        //轮换时间。
+    },
+    methods: {
+      go() {           //mouseleave 正常轮换。
+        this.timer = setInterval(() => {
+          this.autoPlay()
+        }, 4000)
+      },
+      stop() {        //mouseenter 停止轮换。
+        clearInterval(this.timer)
+        this.timer = null
+      },
+      change(index) {   //把当前指标换为鼠标所覆盖的指标。
+        this.currentIndex = index
+      },
+      autoPlay() {     //产品数组内自动轮换。
+        this.currentIndex++
+        if (this.currentIndex > this.slideList.length - 1) {
+          this.currentIndex = 0
+        }
+      }
+    },
+    created() {    //转换时间。
+      this.$nextTick(() => {
+        this.timer = setInterval(() => {
+          this.autoPlay()
+        }, 4000)
+      })
+    }
+  })
+
+</script>

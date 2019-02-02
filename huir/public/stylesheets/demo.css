@@ -1,0 +1,61 @@
+body {
+    padding: 0px;
+    font-family: Helvetica;
+  }
+
+#app {
+    background: #cccccc;
+    border-radius: 4px;
+    padding: 5px;
+    transition: all 0.2s;
+  }
+
+/*图片轮换部分*/
+
+.box-text {
+  padding-top: 2%;
+  padding-left: 20%;
+}
+
+h2 {
+  font-family: KaiTi;
+  font-size: 45px;
+  text-align: center;
+}
+p {
+ font-family: KaiTi;
+ font-size: 25px;
+}
+/*图片转换游标*/
+.carousel-items {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.carousel-items span {
+  display: inline-block;
+  height: 6px;
+  width: 30px;
+  margin: 0 3px;
+  background-color: #b2b2b2;
+  cursor: pointer;
+}
+.carousel-items .active {
+  background-color: rgb(120, 126, 219);
+}
+
+
+/*-------------------------------------------*/
+/*图片展示部分*/
+
+.static-wrap {
+  padding-bottom: 20px;
+  background-color: #dbd7d7;
+}
+.picture-items {
+  padding: 6%;
+}

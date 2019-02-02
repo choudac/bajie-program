@@ -1,0 +1,80 @@
+body {
+  padding: 5px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #000000;
+}
+
+/* 页眉 */
+.nav-demo {
+  background-color: #edf0f3;
+}
+.navbar-default .navbar-brand {
+  font-size: 30px;
+  color: #000066;
+}
+.navfont{
+  font-size: 18px;
+}
+.jumbotron {
+}
+.img{
+  width: auto;
+  height: auto;
+}
+.title {
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+.mar{
+  margin-top: 140px;
+}
+.tab {
+  font-size: 22px;
+}
+
+.landing-page {
+  margin-bottom: 60px;
+  background-color: white;
+  }
+
+  .section p {
+    margin-top: 20px;
+    font-family: "Helvetica Neue";
+    font-size: 10px;
+  }
+
+  .section-bottom {
+    width: 100%;
+    background-image: url("");
+    border-radius: 0 0 6px 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+   h2{
+     margin-top: 40px;
+   }
+    .description {
+      color: #000000;
+      margin-top:  30px;
+      margin-bottom: 30px;
+    }
+  .btngroup{
+    width: 40%;
+    height: auto;
+    background-color: #edf0f3;
+  }
+  .images{
+    width: 260px;
+    height: 250px;
+  }
+
+
+  .pic {
+    text-align: center;
+  }
