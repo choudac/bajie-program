@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/detail/main",
+    "pages/phone/main",
+    "pages/counter/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "八戒小程序设计",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#00cc33",
+    "list": [
+      {
+        "pagePath": "pages/index/main",
+        "text": "首页",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home-active.png"
+      },
+      {
+        "pagePath": "pages/phone/main",
+        "text": "联系我们",
+        "iconPath": "static/img/phone.png",
+        "selectedIconPath": "static/img/phone-active.png"
+      }
+    ]    
+  }
+}
