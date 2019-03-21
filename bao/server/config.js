@@ -5,7 +5,7 @@ const CONF = {
      tunnelServerUrl: '',
      tunnelSignatureKey: 'xxxxxxxxx',
        // 腾讯云相关配置可以查看云 API 密钥控制台：https://console.cloud.tencent.com/capi
-     qcloudAppId: '1258099217',
+     qcloudAppId: 'xxxxxxx',
      qcloudSecretId: 'xxxxxxxxxxxxxxx',
      qcloudSecretKey: 'xxxxxxx',
      wxMessageToken: 'weixinmsgtoken',
